@@ -1,0 +1,11 @@
+<paxos_service>
+	<line_handler>
+		<acceptor>
+			<id>acceptor-3</id>
+		</acceptor>
+		<interface>0.0.0.0</interface>
+		<group>239.20.97.19</group>
+		<port>1077</port>
+		<ttl>2</ttl>
+	</line_handler>
+</paxos_service>
