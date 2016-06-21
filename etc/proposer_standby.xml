@@ -1,0 +1,23 @@
+<paxos_service>
+	<line_handler>
+		<proposer>
+			<id>proposer-2</id>
+			<start_state>STANDBY</start_state>
+			<heartbeat_ms>1000</heartbeat_ms>
+			<phase_timeout_ms>250</phase_timeout_ms>
+		</proposer>
+	<!-- optionnal define an acceptor here: -->
+		<acceptor>
+			<id>acceptor-2</id>
+		</acceptor>
+		<interface>0.0.0.0</interface>
+		<group>239.20.97.19</group>
+		<port>1077</port>
+		<ttl>2</ttl>
+	</line_handler>
+	<quorum>
+		<acceptor id="acceptor-1"/>
+		<acceptor id="acceptor-2"/>
+		<acceptor id="acceptor-3"/>
+	</quorum>
+</paxos_service>
